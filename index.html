@@ -9,38 +9,54 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                    <li><a href="#">MEET US</a></li>
+                </ul>
+            </nav>
+        </div>
         <section id="banner">
-            <img src="images/image logo.jpg"class="logo"> 
+            <img src="Images/image_logo.jpg"class="logo"> 
             <div class="banner-text">
                 <h1>FP RETAIL STORE</h1>
                 <p>Everyone deserves a new something</p>
                 <div class="banner-btn">
-                    <a hef="#"><span></span> Find out</a>
-                    <a hef="#"><span></span> Read more</a>
+                    <a href="#"><span></span> Find out</a>
+                    <a href="#"><span></span> Read more</a>
                 </div>
             </div>
         </section>
-        <div id="sideNav">
-            <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">TESTIMONIALS</a></li>
-                <li><a href="#">MEET US</a></li>
-            </ul>
-            </nav>
-        </div>
+        
+        
+        
         <div id="menuBtn">
-             <img src="images/menu.png" id="menu">
+             <img src="Images/menu.png" id="menu">
         </div>
-       
+        <script>
+            var menuBtn=documnent.getElementById("menuBtn");
+            var sideNav=documnent.getElementById("sideNav");
+            var menu=documnent.getElementById("menu");
+            sideNav.style.right = "-170px";
+
+            menuBtn.onclick = function() {
+                if(sideNav.style.right== "-170px"){
+                    sideNav.style.right = "0";
+                } else {
+                    sideNav.style.right = "-170px"
+                }
+            }
+        </script>
+
 <!--FEATURES-->
 
-<section id="feature"
+<section id="feature">
 <div class="title-text"></div>
-
-
+</section>
 
 
        
@@ -64,4 +80,49 @@
     </html>
 
 
+*********
+section id="banner">
+       <div class="banner-text">
+        <h1>PORTFOLIO</h1>
+         <p>FLORENCE PHOEBE</p>
 
+    </div>
+            <div class="banner-btn">
+                <a href="#"><span></span> Find out</a>
+                <a href="#"><span></span> Read more</a>
+            </div>
+    <div class="container">
+        <div class="Portfolio">
+            <h3>PORTFOLIO</h3>
+            <p>NAMES: FLORENCE P. 
+               AGE: 21 YEARS OLD
+               CITIZENSHIP: KENYAN
+               GENDER: FEMALE</p>
+           <p>  Education Background
+               (2018-Present)
+               Daystar University
+               Bachelor of Commerce: Business Administration.                                                                  
+               Relevant Coursework:
+               Human Resource Management, Industrial Psychology, Financial Management and Strategic Management.
+               (2014-2017)
+               Staghsville International School
+               B+</p>
+        </div>    
+         <div class="About">
+ 
+             <div class="images">
+                 <!-- <img src="C:\xampp\htdocs\REAL PROJECT\img\blackgirlcoding.jpg"> -->
+                 <!--<img src="C:\xampp\htdocs\REAL PROJECT\img\IMG-20190517-WA0027~2.jpg">-->
+             </div>
+ 
+             <div class="detail">
+                 <h1>I'm Florence <span>Phoebe</span></h1>
+                 <p>This is my official portfolio website to show all
+                 <br>details and work experience in web development.
+                 </p> 
+
+             </div>
+             
+        
+   </div>
+   </div>
